@@ -5,7 +5,7 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
  
 const userController = require('../controllers/userController');
-const User = require('../models/users');
+const User = require('../models/User');
  
 // ✅ Criar usuário (registro) — público
 router.post('/', userController.createUser);
